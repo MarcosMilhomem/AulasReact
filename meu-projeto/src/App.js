@@ -7,7 +7,11 @@ function App() {
   return (
     <div className="App">
       <SayMyName nome={nome}/>
-      <Pessoa />
+      <Pessoa 
+      nome="Marcos"
+      idade="20"
+      profissão="Dev"
+      foto="https://placehold.co/150"/>
     </div>
   );
 }
