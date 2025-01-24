@@ -2,6 +2,7 @@ import './App.css';
 import SayMyName from './components/SayMyName';
 import Pessoa from './components/Pessoa';
 import Frase from './components/Frase';
+import Lista from './components/Lista';
 
 function App() {
   const nome = "Marcos"
@@ -14,6 +15,7 @@ function App() {
       profissão="Dev"
       foto="https://placehold.co/150"/>
     <Frase/>
+    <Lista/>
     </div>
 
   );
