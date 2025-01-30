@@ -1,3 +1,5 @@
+import Button from "./evento/Button"
+
 function Evento({ numero }) {
 
     function meuEvento() {
@@ -7,7 +9,7 @@ function Evento({ numero }) {
     return(
         <div>
             <p>Clique para disparar um evento</p>
-            <button onClick={meuEvento}>Ativar! </button>
+            <Button event={meuEvento} text='Primeiro evento'/>
         </div>
     )
 }
