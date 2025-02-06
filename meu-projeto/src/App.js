@@ -13,7 +13,7 @@ function App() {
     <div className="App"> 
       <h1>Testando Eventos</h1>
       <Form/>
-       <Evento numero='1'/>
+       <Evento />
     </div>
   );
 }
