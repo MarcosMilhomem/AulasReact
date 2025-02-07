@@ -5,15 +5,18 @@ import Frase from './components/Frase';
 import Lista from './components/Lista';
 import Form from './components/Form';
 import Evento from './components/Evento';
+import Condicional from './components/Condicional';
 
 function App() {
   const nome = "Marcos"
+  
+  const teste = [1,2,3,4]
 
   return (
     <div className="App"> 
-      <h1>Testando Eventos</h1>
-      <Form/>
-       <Evento />
+      <h1>Renderização condicional</h1>
+      <Condicional/>
+      <p>{teste}</p>
     </div>
   );
 }
