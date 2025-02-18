@@ -15,6 +15,8 @@ import Saudacao from './components/Saudacao';
 import Home from './pages/Home';
 import Contato from './pages/Contato';
 import Empresa from './pages/Empresa';
+import Nav from './components/Nav';
+
 
 function App() {
 
@@ -23,17 +25,7 @@ function App() {
   return (
     <Router>
       
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/empresa">Empresa</Link>
-        </li>
-        <li>
-          <Link to="/contato">Contato</Link>
-        </li>
-      </ul>
+      <Nav/>
 
       <Routes>
         <Route path='/' element={<Home/>}/>
