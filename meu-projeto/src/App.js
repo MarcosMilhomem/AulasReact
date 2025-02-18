@@ -1,5 +1,7 @@
 import './App.css';
 import { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
+
 import SayMyName from './components/SayMyName';
 import Pessoa from './components/Pessoa';
 import Frase from './components/Frase';
@@ -10,17 +12,35 @@ import Condicional from './components/Condicional';
 import OutraLista from './components/OutraLista';
 import SeuNome from './components/SeuNome';
 import Saudacao from './components/Saudacao';
+import Home from './pages/Home';
+import Contato from './pages/Contato';
+import Empresa from './pages/Empresa';
 
 function App() {
 
   const [nome, setNome] = useState()
 
   return (
-    <div className="App"> 
-      <h1>State Lift</h1>
-      <SeuNome setNome = {setNome}/>
-      <Saudacao nome= {nome} />
-    </div>
+    <Router>
+      
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/empresa">Empresa</Link>
+        </li>
+        <li>
+          <Link to="/contato">Contato</Link>
+        </li>
+      </ul>
+
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/empresa' element={<Empresa/>}/>
+        <Route path='/contato' element={<Contato/>}/>
+      </Routes>
+    </Router>
   );
 }
 
