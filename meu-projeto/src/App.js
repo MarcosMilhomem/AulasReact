@@ -15,7 +15,7 @@ import Saudacao from './components/Saudacao';
 import Home from './pages/Home';
 import Contato from './pages/Contato';
 import Empresa from './pages/Empresa';
-import Nav from './components/Nav';
+import Nav from './components/layout/Nav';
 
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
       <Nav/>
 
       <Routes>
-        <Route path='/' element={<Home/>}/>
+        <Route  exact path='/' element={<Home/>}/>
         <Route path='/empresa' element={<Empresa/>}/>
         <Route path='/contato' element={<Contato/>}/>
       </Routes>

@@ -20,7 +20,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 2vmin);  []
+  [´=[]]
   color: white;
 }
 
@@ -40,4 +41,16 @@
 .nav {
   display: flex;
   justify-content: space-around;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav li {
+  list-style: none;
+  color: blueviolet;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
 }
