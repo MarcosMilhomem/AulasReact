@@ -16,6 +16,7 @@ import Home from './pages/Home';
 import Contato from './pages/Contato';
 import Empresa from './pages/Empresa';
 import Nav from './components/layout/Nav';
+import Footer from './components/layout/Footer';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
   const [nome, setNome] = useState()
 
   return (
+    <div>
     <Router>
       
       <Nav/>
@@ -33,6 +35,8 @@ function App() {
         <Route path='/contato' element={<Contato/>}/>
       </Routes>
     </Router>
+    <Footer />
+    </div>
   );
 }
 
