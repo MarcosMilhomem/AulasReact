@@ -10,8 +10,5 @@ function Item ({ marca, ano_lançamento }) {
     )
 }
 
-Item.PropTypes = {
-    marca: PropTypes.string
-}
 
 export default Item
